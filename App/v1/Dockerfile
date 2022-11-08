@@ -5,7 +5,7 @@ LABEL MAINTAINER=nigelpoulton@hotmail.com
 # Copy source code to /src in container
 COPY . /src
 
-# Install app and dependencies into /src in container
+# Install app and dependencies into /src in container first
 RUN cd /src; npm install
 
 # Document the port the app listens on
